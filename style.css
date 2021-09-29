@@ -1,0 +1,66 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+   height: 100px; width: 100%; background-image: linear-gradient(to right , black,red);
+}
+#logobox{
+    width:20% ; height: 80%; float: left;; background-color: white;
+}
+
+h2{
+    text-align: center; font-family: 'Anton', sans-serif; font-size: bold; margin-top: 15px;
+
+}
+nav{
+    width: 70%; text-align:center;
+}
+nav a{
+    text-decoration: none; color: white; font-family: 'Raleway', sans-serif; font-weight: bold; display: inline-block;
+}
+nav li{
+    display: inline-block; line-height: 100px;  text-align: center; margin-top: auto; margin-bottom: auto; margin-right: auto; margin-left: auto;
+}
+nav a:hover{
+    background-color: white; color: black; height: 100%; width: 100%;
+}
+main{
+    width: 100%;
+    height: 580px;
+    border-top: 3px solid white ; background-color: rgb(252, 118, 118); 
+    animation-name: changeBackground;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes changeBackground {
+    0% {
+        background-color: white;
+    }
+    50% {background-color: red;}
+    100% {background-color: black;}
+}
+aside {
+    width: 30%; height: 100%; background-color: white; text-align: center; float: left;
+}
+aside img{
+    width: 90%;
+    border-bottom: 2px solid black;
+}
+#article {
+    float: right; width: 70%; height: 450px; position: relative; 
+}
+#box{
+    position: absolute; width: 800px; height: 180px; background-color: white; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; padding: 15px;
+}
+#contact {
+    width: 50%; display: flex; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: auto;
+}
+#contact img{
+    width: 45px; padding-bottom: 2px; border-bottom: 2px double rgb(248, 176, 176);
+}
+#contact img:hover{ width: 55px; border-bottom: 2px solid black;
+
+
+}
